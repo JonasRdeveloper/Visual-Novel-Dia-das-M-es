@@ -1,0 +1,19 @@
+[background scene="res://src/Cenas/Apresentacao.tscn" arg="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" fade="0.0"]
+join A_dedicada right [animation="Fade In"]
+A_dedicada (Alegre): Olá, a todas as mães!
+join A_dedicada (Surpresa) right
+A_dedicada (Surpresa): O quê?! Você não recorda que dia é hoje...
+join A_dedicada (Feliz) right
+A_dedicada (Feliz): Hoje é dia das MÃES!!!
+join A_dedicada (Alegre) right
+A_dedicada (Alegre): Espero que cada mãe se sinta honrada neste maravilhoso dia, e que cada uma de vocês possam desfrutar das riquíssimas dávivas que Deus concedeu a cada uma com grande poder e graça!
+A_dedicada (Feliz): Hoje celebramos o amor incondicional, a força incomparável e os corações generosos de todas as mães.
+A_dedicada (Feliz): Vocês, que são a base de tantas histórias de amor e superação, merecem não só este dia, mas todos os dias, para serem reconhecidas e adimiradas por seus méritos.
+A_dedicada (Feliz): Que este Dia das Mães seja repleto de sorrisos, abraços calorosos e momentos preciosos ao lado de quem vocês mais amam.
+A_dedicada (Feliz): Lembrem-se\: vocês são verdadeiras heroínas, capazes de transformar vidas com uma palavra de conforto ou um simples gesto de carinho.
+A_dedicada (Feliz): A todas as mães, nossa mais profunda gratidão e admiração!
+join A_dedicada (Alegre) right
+join filho (Feliz) left
+filho (Alegre): É isso aí!
+join Pai (pai_feliz) center
+Pai (pai_alegre): Parabéns para todas vocês!

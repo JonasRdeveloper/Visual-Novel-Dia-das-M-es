@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://doqwodp2q3vrf"]
+
+[ext_resource type="Script" uid="uid://qmrs63nis6tt" path="res://src/Roteiros/apresentacao.gd" id="1_wyas1"]
+[ext_resource type="Texture2D" uid="uid://m0gohujemepa" path="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" id="2_dkj2v"]
+
+[node name="Apresentacao" type="Node"]
+script = ExtResource("1_wyas1")
+linha_do_tempo = "uid://b5a75o6fc5k2g"
+
+[node name="Controle_de_apresentacao" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(576, 324)
+
+[node name="Ambiente" type="TextureRect" parent="Controle_de_apresentacao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(576, 324)
+texture = ExtResource("2_dkj2v")
+expand_mode = 1
