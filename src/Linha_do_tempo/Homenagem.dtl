@@ -1,10 +1,20 @@
 [background scene="res://src/Cenas/Apresentacao.tscn" arg="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" fade="0.0"]
 join A_dedicada right [animation="Fade In"]
-A_dedicada (Alegre): Olá, a todas as mães!
-join A_dedicada (Surpresa) right
-A_dedicada (Surpresa): O quê?! Você não recorda que dia é hoje...
+A_dedicada (Alegre): Olá, a todos!
+A_dedicada (Alegre): Vocês sabem que dia é hoje?
+join A_dedicada (Alegre) right
+- Não...
+	A_dedicada (Surpresa): Não?
+	A_dedicada (Alegre): Hoje é dia das MÃES!!!
+- Sim, eu sei!
+	[text_input text="Informe que dia tão especial é hoje com todas as letras minúsculas:" var="informacao" placeholder="Insira a informação aqui!"]
+	if {informacao} == {Dia}:
+		A_dedicada (Alegre): Sim, isso mesmo, você acertou\: {informacao}
+	else:
+		A_dedicada (Surpresa): Tem certeza, que você preencheu o campo corretamente?
+		A_dedicada (Alegre): Tudo bem, deixa pra lá...
+		A_dedicada (Alegre): Hoje é dia das Mães!
 join A_dedicada (Feliz) right
-A_dedicada (Feliz): Hoje é dia das MÃES!!!
 join A_dedicada (Alegre) right
 A_dedicada (Alegre): Espero que cada mãe se sinta honrada neste maravilhoso dia, e que cada uma de vocês possam desfrutar das riquíssimas dávivas que Deus concedeu a cada uma com grande poder e graça!
 A_dedicada (Feliz): Hoje celebramos o amor incondicional, a força incomparável e os corações generosos de todas as mães.

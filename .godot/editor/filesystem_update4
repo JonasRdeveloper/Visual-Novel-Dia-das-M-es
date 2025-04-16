@@ -1,6 +1,6 @@
-res://src/Personagens/A_dedicada.dch
+res://src/Recursos/Estilizando/Estilizando_caixas_de_dialogo.tres
 res://src/Cenas/Apresentacao.tscn
-res://src/Linha_do_tempo/Homenagem.dtl
 res://src/Personagens/Pai.dch
-res://src/Personagens/filho.dch
-res://addons/dialogic/Modules/Character/subsystem_containers.gd
+res://src/Recursos/Estilizando/Exemplo.tres
+res://src/Linha_do_tempo/Homenagem.dtl
+res://src/Roteiros/apresentacao.gd
