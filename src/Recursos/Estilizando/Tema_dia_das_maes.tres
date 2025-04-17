@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dyenlvncjrvpj"]
+
+[ext_resource type="FontFile" uid="uid://x5rgkht7g78j" path="res://src/Recursos/Fontes/exmouth_.ttf" id="1_r52o1"]
+
+[resource]
+RichTextLabel/colors/default_color = Color(0.961384, 0, 0.398457, 1)
+RichTextLabel/font_sizes/normal_font_size = 90
+RichTextLabel/fonts/normal_font = ExtResource("1_r52o1")

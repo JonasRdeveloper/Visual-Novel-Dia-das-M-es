@@ -1,24 +1,28 @@
 [background scene="res://src/Cenas/Apresentacao.tscn" arg="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" fade="0.0"]
+audio music "res://src/Recursos/Sons/Musicas/BGM Pack 1 OGG/beanfeast.ogg" [volume="-20.0"]
 join A_dedicada right [animation="Fade In"]
 A_dedicada (Alegre): Olá, a todos!
 A_dedicada (Alegre): Vocês sabem que dia é hoje?
 join A_dedicada (Alegre) right
 - Não...
 	A_dedicada (Surpresa): Não?
+	[signal arg="Aparecer"]
 	A_dedicada (Alegre): Hoje é dia das MÃES!!!
 - Sim, eu sei!
-	[text_input text="Informe que dia tão especial é hoje com todas as letras minúsculas:" var="informacao" placeholder="Insira a informação aqui!"]
+	[text_input text="Informe que dia tão especial é hoje. Lembre-se de usar apenas a primeira letra da frase em Maiúsculo:" var="informacao" placeholder="Insira a informação aqui!"]
 	if {informacao} == {Dia}:
+		[signal arg="Aparecer"]
 		A_dedicada (Alegre): Sim, isso mesmo, você acertou\: {informacao}
 	else:
 		A_dedicada (Surpresa): Tem certeza, que você preencheu o campo corretamente?
 		A_dedicada (Alegre): Tudo bem, deixa pra lá...
+		[signal arg="Aparecer"]
 		A_dedicada (Alegre): Hoje é dia das Mães!
 join A_dedicada (Feliz) right
 join A_dedicada (Alegre) right
 A_dedicada (Alegre): Espero que cada mãe se sinta honrada neste maravilhoso dia, e que cada uma de vocês possam desfrutar das riquíssimas dávivas que Deus concedeu a cada uma com grande poder e graça!
 A_dedicada (Feliz): Hoje celebramos o amor incondicional, a força incomparável e os corações generosos de todas as mães.
-A_dedicada (Feliz): Vocês, que são a base de tantas histórias de amor e superação, merecem não só este dia, mas todos os dias, para serem reconhecidas e adimiradas por seus méritos.
+A_dedicada (Feliz): Vocês, que são a base de tantas histórias de amor e superação, merecem não só este dia, mas todos os dias, para serem reconhecidas e admiradas por seus méritos.
 A_dedicada (Feliz): Que este Dia das Mães seja repleto de sorrisos, abraços calorosos e momentos preciosos ao lado de quem vocês mais amam.
 A_dedicada (Feliz): Lembrem-se\: vocês são verdadeiras heroínas, capazes de transformar vidas com uma palavra de conforto ou um simples gesto de carinho.
 A_dedicada (Feliz): A todas as mães, nossa mais profunda gratidão e admiração!
@@ -27,3 +31,6 @@ join filho (Feliz) left
 filho (Alegre): É isso aí!
 join Pai (pai_feliz) center
 Pai (pai_alegre): Parabéns para todas vocês!
+- Obrigada por tudo!
+	[signal arg="final"]
+[end_timeline]

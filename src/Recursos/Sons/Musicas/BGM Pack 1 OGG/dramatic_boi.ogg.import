@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://g50yl256j88f"
+path="res://.godot/imported/dramatic_boi.ogg-535b92e8cc327b8e34d6a0bf28fbb340.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/Recursos/Sons/Musicas/BGM Pack 1 OGG/dramatic_boi.ogg"
+dest_files=["res://.godot/imported/dramatic_boi.ogg-535b92e8cc327b8e34d6a0bf28fbb340.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

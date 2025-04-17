@@ -1,4 +1,8 @@
+CanvasLayer
+CPUParticles2D
+Node2D
+ColorRect
+RichTextLabel
 TextureRect
 Control
 Sprite2D
-Node2D

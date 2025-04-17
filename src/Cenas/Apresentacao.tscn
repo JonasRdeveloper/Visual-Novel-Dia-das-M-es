@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://doqwodp2q3vrf"]
+[gd_scene load_steps=6 format=3 uid="uid://doqwodp2q3vrf"]
 
 [ext_resource type="Script" uid="uid://qmrs63nis6tt" path="res://src/Roteiros/apresentacao.gd" id="1_wyas1"]
 [ext_resource type="Texture2D" uid="uid://m0gohujemepa" path="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" id="2_dkj2v"]
+[ext_resource type="Theme" uid="uid://dyenlvncjrvpj" path="res://src/Recursos/Estilizando/Tema_dia_das_maes.tres" id="3_tesan"]
+[ext_resource type="Texture2D" uid="uid://b8bs74aikeaa7" path="res://addons/kenney_particle_pack/symbol_01.png" id="4_rd8ij"]
+
+[sub_resource type="Curve" id="Curve_4wxp5"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.503663, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
 
 [node name="Apresentacao" type="Node"]
 script = ExtResource("1_wyas1")
@@ -26,3 +32,50 @@ grow_vertical = 2
 pivot_offset = Vector2(576, 324)
 texture = ExtResource("2_dkj2v")
 expand_mode = 1
+
+[node name="Titulo" type="RichTextLabel" parent="Controle_de_apresentacao"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -336.0
+offset_top = -58.0
+offset_right = 360.0
+offset_bottom = 224.0
+grow_horizontal = 2
+theme = ExtResource("3_tesan")
+bbcode_enabled = true
+text = "          
+	[tornado freq=2.5]Feliz Dia das Mães[/tornado]"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="fundo_fim" type="ColorRect" parent="Controle_de_apresentacao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Espaco_2D" type="Node2D" parent="CanvasLayer"]
+
+[node name="Particulas_de_coracao" type="CPUParticles2D" parent="CanvasLayer/Espaco_2D"]
+unique_name_in_owner = true
+position = Vector2(616, 281)
+rotation = -2.54433
+emitting = false
+texture = ExtResource("4_rd8ij")
+emission_shape = 2
+emission_sphere_radius = 10.0
+direction = Vector2(0, 1)
+gravity = Vector2(980, 0)
+initial_velocity_min = 500.0
+initial_velocity_max = 500.0
+scale_amount_min = 0.25
+scale_amount_max = 0.25
+scale_amount_curve = SubResource("Curve_4wxp5")
+color = Color(1, 0, 1, 1)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co0orphrmutv6"
+path="res://.godot/imported/woo_scary.ogg-db3103759c2b74edabefce73e0291ef7.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/Recursos/Sons/Musicas/BGM Pack 1 OGG/woo_scary.ogg"
+dest_files=["res://.godot/imported/woo_scary.ogg-db3103759c2b74edabefce73e0291ef7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

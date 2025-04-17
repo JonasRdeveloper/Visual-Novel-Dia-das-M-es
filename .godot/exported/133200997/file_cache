@@ -106,4 +106,5 @@ res://addons/dialogic/Modules/Text/character_settings/character_moods_settings.t
 res://addons/dialogic/Modules/Text/character_settings/character_portrait_mood_settings.tscn::cb6d691e62e2b3cebb19d776faa73755::1744661566::res://.godot/exported/133200997/export-37c35566857061453231ad11bc175413-character_portrait_mood_settings.scn
 res://addons/dialogic/Modules/Text/settings_text.tscn::8b8fe451a6e5a7d63b4ededf75940cd8::1744661566::res://.godot/exported/133200997/export-67100a9f8a5726886cf8dbc525c7a035-settings_text.scn
 res://addons/dialogic/Modules/Variable/variables_editor/variables_editor.tscn::a6e200cb5f13e6d3e07ddc421eac5b74::1744661569::res://.godot/exported/133200997/export-81d6117e9fbfcc345d9d0dd8f77e3c55-variables_editor.scn
-res://src/Cenas/Apresentacao.tscn::112039f668e3681ea286d5c581840050::1744810142::res://.godot/exported/133200997/export-def89515e699cd7d7a84b08e2c1e69e5-Apresentacao.scn
+res://src/Cenas/Apresentacao.tscn::43c032486247e7ddcb645e277603377a::1744908494::res://.godot/exported/133200997/export-def89515e699cd7d7a84b08e2c1e69e5-Apresentacao.scn
+res://src/Recursos/Estilizando/Tema_dia_das_maes.tres::441c8b2c59cdb08b0c7aa688a775d387::1744904119::res://.godot/exported/133200997/export-4916641d00061cbf564331b6a1f1eda4-Tema_dia_das_maes.res

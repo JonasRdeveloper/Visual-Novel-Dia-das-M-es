@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://de3ynqxpmvlwn"
+path="res://.godot/imported/beanfeast.ogg-517fbf5d37e7ba59a19fc0242190d53a.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/Recursos/Sons/Musicas/BGM Pack 1 OGG/beanfeast.ogg"
+dest_files=["res://.godot/imported/beanfeast.ogg-517fbf5d37e7ba59a19fc0242190d53a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
