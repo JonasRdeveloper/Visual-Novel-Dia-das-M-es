@@ -29,7 +29,9 @@ A_dedicada (Feliz): A todas as mães, nossa mais profunda gratidão e admiraçã
 join A_dedicada (Alegre) right
 join filho (Feliz) left
 filho (Alegre): É isso aí!
+filho (Feliz): Minha mãe sempre cuidou de mim como uma raríssima pedra preciosa, logo sou o resultado vivo de toda esta competência.
 join Pai (pai_feliz) center
+Pai (pai_alegre): Como marido, contemplo todos os dias todo este cuidado e atenção da minha esposa e sinto um imenso orgulho dela em tudo o que ela faz!
 Pai (pai_alegre): Parabéns para todas vocês!
 - Obrigada por tudo!
 	[signal arg="final"]
