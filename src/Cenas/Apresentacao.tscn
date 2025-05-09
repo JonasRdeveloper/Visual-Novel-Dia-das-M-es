@@ -1,9 +1,51 @@
-[gd_scene load_steps=6 format=3 uid="uid://doqwodp2q3vrf"]
+[gd_scene load_steps=10 format=3 uid="uid://doqwodp2q3vrf"]
 
 [ext_resource type="Script" uid="uid://qmrs63nis6tt" path="res://src/Roteiros/apresentacao.gd" id="1_wyas1"]
 [ext_resource type="Texture2D" uid="uid://m0gohujemepa" path="res://src/Recursos/Imagens/Ambiente_de_fundo/Suspence.png" id="2_dkj2v"]
 [ext_resource type="Theme" uid="uid://dyenlvncjrvpj" path="res://src/Recursos/Estilizando/Tema_dia_das_maes.tres" id="3_tesan"]
 [ext_resource type="Texture2D" uid="uid://b8bs74aikeaa7" path="res://addons/kenney_particle_pack/symbol_01.png" id="4_rd8ij"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rd8ij"]
+font_size = 32
+font_color = Color(0.209275, 0.0749279, 0.627939, 0.501961)
+outline_size = 4
+
+[sub_resource type="Animation" id="Animation_4wxp5"]
+resource_name = "Fim"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 656), Vector2(0, -780)]
+}
+
+[sub_resource type="Animation" id="Animation_eu6pf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -780)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1jeds"]
+_data = {
+&"Fim": SubResource("Animation_4wxp5"),
+&"RESET": SubResource("Animation_eu6pf")
+}
 
 [sub_resource type="Curve" id="Curve_4wxp5"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.503663, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -58,6 +100,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0)
+
+[node name="Creditos" type="Label" parent="Controle_de_apresentacao"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1428.0
+offset_bottom = -1287.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Desenvolvedor Jonas do Ramo Silva
+Desiner de som Kenney
+Ilustrador Microsoft Designer"
+label_settings = SubResource("LabelSettings_rd8ij")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Anim_creditos" type="AnimationPlayer" parent="Controle_de_apresentacao/Creditos"]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_1jeds")
+}
+speed_scale = 0.01
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

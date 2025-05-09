@@ -19,4 +19,4 @@ func _ligar_titulo_do_jogo(titulo_jogo: String) -> void:
 func _ligar_fim_da_apresentacao(fim: String) -> void:
 	if fim == 'final':
 		%Particulas_de_coracao.set_emitting(true)
-		
+		%Anim_creditos.play("Fim")

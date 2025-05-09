@@ -1,10 +1,11 @@
+AnimationPlayer
+Label
 ProgressBar
 TextureProgressBar
 AudioStreamPlayer2D
 TextureRect
 TextureButton
 Button
-Label
 NinePatchRect
 Node2D
 Control
@@ -12,4 +13,3 @@ CanvasLayer
 CPUParticles2D
 ColorRect
 RichTextLabel
-Sprite2D
